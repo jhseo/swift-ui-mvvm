@@ -27,6 +27,7 @@
 		4322CAD923EBB95200838A98 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD823EBB95200838A98 /* SearchBar.swift */; };
 		4322CADC23EBB97600838A98 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CADB23EBB97600838A98 /* UIImage+Extension.swift */; };
 		4322CADE23EBBA4600838A98 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CADD23EBBA4600838A98 /* ActivityIndicatorView.swift */; };
+		4322CAE023EBBB3900838A98 /* LoadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CADF23EBBB3900838A98 /* LoadingRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		4322CAD823EBB95200838A98 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		4322CADB23EBB97600838A98 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		4322CADD23EBBA4600838A98 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		4322CADF23EBBB3900838A98 /* LoadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				4322CAD323EBB2AD00838A98 /* BookRow.swift */,
+				4322CADF23EBBB3900838A98 /* LoadingRow.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				4322CAD723EBB33900838A98 /* SafariView.swift in Sources */,
 				4322CA9C23EBACA400838A98 /* swift_ui_mvvm.xcdatamodeld in Sources */,
 				4322CA9723EBACA400838A98 /* AppDelegate.swift in Sources */,
+				4322CAE023EBBB3900838A98 /* LoadingRow.swift in Sources */,
 				4322CAC623EBAEE800838A98 /* BookItem.swift in Sources */,
 				4322CAD123EBB1F800838A98 /* ImageLoader.swift in Sources */,
 				4322CAD923EBB95200838A98 /* SearchBar.swift in Sources */,
