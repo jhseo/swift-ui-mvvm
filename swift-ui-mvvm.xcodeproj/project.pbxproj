@@ -22,6 +22,7 @@
 		4322CACB23EBB07F00838A98 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CACA23EBB07F00838A98 /* APIService.swift */; };
 		4322CACE23EBB1D500838A98 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CACD23EBB1D500838A98 /* ImageView.swift */; };
 		4322CAD123EBB1F800838A98 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD023EBB1F800838A98 /* ImageLoader.swift */; };
+		4322CAD423EBB2AD00838A98 /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD323EBB2AD00838A98 /* BookRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		4322CACA23EBB07F00838A98 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		4322CACD23EBB1D500838A98 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		4322CAD023EBB1F800838A98 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		4322CAD323EBB2AD00838A98 /* BookRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		4322CABC23EBADFB00838A98 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4322CAD223EBB29700838A98 /* Cell */,
 				4322CACC23EBB1C800838A98 /* Component */,
 				4322CABF23EBAE1D00838A98 /* Storyboard */,
 				4322CA9D23EBACA400838A98 /* ContentView.swift */,
@@ -201,6 +204,14 @@
 				4322CAD023EBB1F800838A98 /* ImageLoader.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		4322CAD223EBB29700838A98 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4322CAD323EBB2AD00838A98 /* BookRow.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +326,7 @@
 				4322CA9923EBACA400838A98 /* SceneDelegate.swift in Sources */,
 				4322CACB23EBB07F00838A98 /* APIService.swift in Sources */,
 				4322CAC823EBAEF100838A98 /* ImageLinks.swift in Sources */,
+				4322CAD423EBB2AD00838A98 /* BookRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
