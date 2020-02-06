@@ -23,6 +23,7 @@
 		4322CACE23EBB1D500838A98 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CACD23EBB1D500838A98 /* ImageView.swift */; };
 		4322CAD123EBB1F800838A98 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD023EBB1F800838A98 /* ImageLoader.swift */; };
 		4322CAD423EBB2AD00838A98 /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD323EBB2AD00838A98 /* BookRow.swift */; };
+		4322CAD723EBB33900838A98 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD623EBB33900838A98 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		4322CACD23EBB1D500838A98 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		4322CAD023EBB1F800838A98 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		4322CAD323EBB2AD00838A98 /* BookRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
+		4322CAD623EBB33900838A98 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				4322CACD23EBB1D500838A98 /* ImageView.swift */,
+				4322CAD623EBB33900838A98 /* SafariView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			files = (
 				4322CACE23EBB1D500838A98 /* ImageView.swift in Sources */,
 				4322CAC423EBAEE000838A98 /* BookModel.swift in Sources */,
+				4322CAD723EBB33900838A98 /* SafariView.swift in Sources */,
 				4322CA9C23EBACA400838A98 /* swift_ui_mvvm.xcdatamodeld in Sources */,
 				4322CA9723EBACA400838A98 /* AppDelegate.swift in Sources */,
 				4322CAC623EBAEE800838A98 /* BookItem.swift in Sources */,
