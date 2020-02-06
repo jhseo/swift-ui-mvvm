@@ -26,6 +26,7 @@
 		4322CAD723EBB33900838A98 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD623EBB33900838A98 /* SafariView.swift */; };
 		4322CAD923EBB95200838A98 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD823EBB95200838A98 /* SearchBar.swift */; };
 		4322CADC23EBB97600838A98 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CADB23EBB97600838A98 /* UIImage+Extension.swift */; };
+		4322CADE23EBBA4600838A98 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CADD23EBBA4600838A98 /* ActivityIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		4322CAD623EBB33900838A98 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		4322CAD823EBB95200838A98 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		4322CADB23EBB97600838A98 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		4322CADD23EBBA4600838A98 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				4322CACD23EBB1D500838A98 /* ImageView.swift */,
 				4322CAD623EBB33900838A98 /* SafariView.swift */,
 				4322CAD823EBB95200838A98 /* SearchBar.swift */,
+				4322CADD23EBBA4600838A98 /* ActivityIndicatorView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				4322CA9E23EBACA400838A98 /* ContentView.swift in Sources */,
 				4322CAC223EBAED600838A98 /* VolumeInfo.swift in Sources */,
 				4322CA9923EBACA400838A98 /* SceneDelegate.swift in Sources */,
+				4322CADE23EBBA4600838A98 /* ActivityIndicatorView.swift in Sources */,
 				4322CACB23EBB07F00838A98 /* APIService.swift in Sources */,
 				4322CADC23EBB97600838A98 /* UIImage+Extension.swift in Sources */,
 				4322CAC823EBAEF100838A98 /* ImageLinks.swift in Sources */,
