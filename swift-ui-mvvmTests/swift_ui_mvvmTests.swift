@@ -7,28 +7,27 @@
 //
 
 import XCTest
+import Combine
 @testable import swift_ui_mvvm
 
 class swift_ui_mvvmTests: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    func testAPIService() {
+        let expectation = XCTestExpectation(description: "Request Test")
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        let cancellable = APIService.searchBook(searchText: "Swift", startIndex: 0, maxResults: 20)
+            .sink(receiveValue: { books in
+                XCTAssert(books?.items.count == 20)
+                expectation.fulfill()
+        })
+        wait(for: [expectation], timeout: 2)
     }
-
 }
