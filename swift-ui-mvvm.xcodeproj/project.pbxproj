@@ -20,6 +20,7 @@
 		4322CAC623EBAEE800838A98 /* BookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAC523EBAEE800838A98 /* BookItem.swift */; };
 		4322CAC823EBAEF100838A98 /* ImageLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAC723EBAEF100838A98 /* ImageLinks.swift */; };
 		4322CACB23EBB07F00838A98 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CACA23EBB07F00838A98 /* APIService.swift */; };
+		4322CAD123EBB1F800838A98 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD023EBB1F800838A98 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4322CAC523EBAEE800838A98 /* BookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookItem.swift; sourceTree = "<group>"; };
 		4322CAC723EBAEF100838A98 /* ImageLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLinks.swift; sourceTree = "<group>"; };
 		4322CACA23EBB07F00838A98 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4322CAD023EBB1F800838A98 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				4322CAC023EBAEB800838A98 /* Model */,
 				4322CABC23EBADFB00838A98 /* View */,
 				4322CAC923EBB06400838A98 /* Service */,
+				4322CACF23EBB1E800838A98 /* Utility */,
 				4322CABB23EBADF300838A98 /* Delegate */,
 				4322CABD23EBAE0000838A98 /* Asset */,
 				4322CABE23EBAE0500838A98 /* SupportingFile */,
@@ -179,6 +182,14 @@
 				4322CACA23EBB07F00838A98 /* APIService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		4322CACF23EBB1E800838A98 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4322CAD023EBB1F800838A98 /* ImageLoader.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				4322CA9C23EBACA400838A98 /* swift_ui_mvvm.xcdatamodeld in Sources */,
 				4322CA9723EBACA400838A98 /* AppDelegate.swift in Sources */,
 				4322CAC623EBAEE800838A98 /* BookItem.swift in Sources */,
+				4322CAD123EBB1F800838A98 /* ImageLoader.swift in Sources */,
 				4322CA9E23EBACA400838A98 /* ContentView.swift in Sources */,
 				4322CAC223EBAED600838A98 /* VolumeInfo.swift in Sources */,
 				4322CA9923EBACA400838A98 /* SceneDelegate.swift in Sources */,
