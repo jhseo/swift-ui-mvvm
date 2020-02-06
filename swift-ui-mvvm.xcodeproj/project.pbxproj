@@ -24,6 +24,8 @@
 		4322CAD123EBB1F800838A98 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD023EBB1F800838A98 /* ImageLoader.swift */; };
 		4322CAD423EBB2AD00838A98 /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD323EBB2AD00838A98 /* BookRow.swift */; };
 		4322CAD723EBB33900838A98 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD623EBB33900838A98 /* SafariView.swift */; };
+		4322CAD923EBB95200838A98 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAD823EBB95200838A98 /* SearchBar.swift */; };
+		4322CADC23EBB97600838A98 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CADB23EBB97600838A98 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		4322CAD023EBB1F800838A98 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		4322CAD323EBB2AD00838A98 /* BookRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
 		4322CAD623EBB33900838A98 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		4322CAD823EBB95200838A98 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		4322CADB23EBB97600838A98 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		4322CA9523EBACA400838A98 /* swift-ui-mvvm */ = {
 			isa = PBXGroup;
 			children = (
+				4322CADA23EBB96A00838A98 /* Extension */,
 				4322CAC023EBAEB800838A98 /* Model */,
 				4322CABC23EBADFB00838A98 /* View */,
 				4322CAC923EBB06400838A98 /* Service */,
@@ -197,6 +202,7 @@
 			children = (
 				4322CACD23EBB1D500838A98 /* ImageView.swift */,
 				4322CAD623EBB33900838A98 /* SafariView.swift */,
+				4322CAD823EBB95200838A98 /* SearchBar.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -215,6 +221,14 @@
 				4322CAD323EBB2AD00838A98 /* BookRow.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		4322CADA23EBB96A00838A98 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4322CADB23EBB97600838A98 /* UIImage+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,10 +339,12 @@
 				4322CA9723EBACA400838A98 /* AppDelegate.swift in Sources */,
 				4322CAC623EBAEE800838A98 /* BookItem.swift in Sources */,
 				4322CAD123EBB1F800838A98 /* ImageLoader.swift in Sources */,
+				4322CAD923EBB95200838A98 /* SearchBar.swift in Sources */,
 				4322CA9E23EBACA400838A98 /* ContentView.swift in Sources */,
 				4322CAC223EBAED600838A98 /* VolumeInfo.swift in Sources */,
 				4322CA9923EBACA400838A98 /* SceneDelegate.swift in Sources */,
 				4322CACB23EBB07F00838A98 /* APIService.swift in Sources */,
+				4322CADC23EBB97600838A98 /* UIImage+Extension.swift in Sources */,
 				4322CAC823EBAEF100838A98 /* ImageLinks.swift in Sources */,
 				4322CAD423EBB2AD00838A98 /* BookRow.swift in Sources */,
 			);
