@@ -29,6 +29,7 @@
 		4322CADE23EBBA4600838A98 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CADD23EBBA4600838A98 /* ActivityIndicatorView.swift */; };
 		4322CAE023EBBB3900838A98 /* LoadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CADF23EBBB3900838A98 /* LoadingRow.swift */; };
 		4322CAE323EBBB8A00838A98 /* SearchBooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAE223EBBB8A00838A98 /* SearchBooksViewModel.swift */; };
+		4322CAE823EBBC5F00838A98 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAE723EBBC5F00838A98 /* UIApplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		4322CADD23EBBA4600838A98 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		4322CADF23EBBB3900838A98 /* LoadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingRow.swift; sourceTree = "<group>"; };
 		4322CAE223EBBB8A00838A98 /* SearchBooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksViewModel.swift; sourceTree = "<group>"; };
+		4322CAE723EBBC5F00838A98 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				4322CADB23EBB97600838A98 /* UIImage+Extension.swift */,
+				4322CAE723EBBC5F00838A98 /* UIApplication+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				4322CADC23EBB97600838A98 /* UIImage+Extension.swift in Sources */,
 				4322CAC823EBAEF100838A98 /* ImageLinks.swift in Sources */,
 				4322CAD423EBB2AD00838A98 /* BookRow.swift in Sources */,
+				4322CAE823EBBC5F00838A98 /* UIApplication+Extension.swift in Sources */,
 				4322CAE323EBBB8A00838A98 /* SearchBooksViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
