@@ -81,13 +81,10 @@
 		4322CA9523EBACA400838A98 /* swift-ui-mvvm */ = {
 			isa = PBXGroup;
 			children = (
-				4322CA9623EBACA400838A98 /* AppDelegate.swift */,
-				4322CA9823EBACA400838A98 /* SceneDelegate.swift */,
-				4322CA9D23EBACA400838A98 /* ContentView.swift */,
-				4322CA9F23EBACA700838A98 /* Assets.xcassets */,
-				4322CAA423EBACA700838A98 /* LaunchScreen.storyboard */,
-				4322CAA723EBACA700838A98 /* Info.plist */,
-				4322CA9A23EBACA400838A98 /* swift_ui_mvvm.xcdatamodeld */,
+				4322CABE23EBAE0500838A98 /* SupportingFile */,
+				4322CABD23EBAE0000838A98 /* Asset */,
+				4322CABC23EBADFB00838A98 /* View */,
+				4322CABB23EBADF300838A98 /* Delegate */,
 				4322CAA123EBACA700838A98 /* Preview Content */,
 			);
 			path = "swift-ui-mvvm";
@@ -108,6 +105,49 @@
 				4322CAB223EBACA700838A98 /* Info.plist */,
 			);
 			path = "swift-ui-mvvmTests";
+			sourceTree = "<group>";
+		};
+		4322CABB23EBADF300838A98 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				4322CA9623EBACA400838A98 /* AppDelegate.swift */,
+				4322CA9823EBACA400838A98 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		4322CABC23EBADFB00838A98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4322CABF23EBAE1D00838A98 /* Storyboard */,
+				4322CA9D23EBACA400838A98 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4322CABD23EBAE0000838A98 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				4322CA9F23EBACA700838A98 /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		4322CABE23EBAE0500838A98 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				4322CAA723EBACA700838A98 /* Info.plist */,
+				4322CA9A23EBACA400838A98 /* swift_ui_mvvm.xcdatamodeld */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		4322CABF23EBAE1D00838A98 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4322CAA423EBACA700838A98 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +410,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swift-ui-mvvm/Preview Content\"";
 				DEVELOPMENT_TEAM = 52HBQB3V24;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "swift-ui-mvvm/Info.plist";
+				INFOPLIST_FILE = "swift-ui-mvvm/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +430,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swift-ui-mvvm/Preview Content\"";
 				DEVELOPMENT_TEAM = 52HBQB3V24;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "swift-ui-mvvm/Info.plist";
+				INFOPLIST_FILE = "swift-ui-mvvm/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
