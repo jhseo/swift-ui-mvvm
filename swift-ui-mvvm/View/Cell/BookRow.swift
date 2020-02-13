@@ -10,6 +10,7 @@ import SwiftUI
 
 struct BookRow: View {
     var book: VolumeInfo
+    @State var showDetail: Bool = false
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -28,6 +29,16 @@ struct BookRow: View {
                 }
             }
             Divider()
+        }
+        .listRowInsets(EdgeInsets(top: 8, leading: 8, bottom: 0.33, trailing: 4))
+        // 탭할때 showDetail을 변경
+        .onTapGesture {
+            self.showDetail = true
+        }
+        // NavigationLink(Push)를 쓰면 NavigationBar가 중복으로 나와서 Present 방식으로 띄움
+        .sheet(isPresented: self.$showDetail) { 
+            URL(string: self.book.infoLink ?? "")
+                .map { SafariView(url: $0) }
         }
     }
 }

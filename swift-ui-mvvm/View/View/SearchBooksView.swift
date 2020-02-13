@@ -25,19 +25,11 @@ struct SearchBooksView: View {
                         Section(header: Text("Results (\(books.totalItems))")) {
                             ForEach(Array(books.items.enumerated()), id: \.offset) { (index, book) in
                                 BookRow(book: book.volumeInfo)
-                                    .listRowInsets(EdgeInsets(top: 8, leading: 8, bottom: 0.33, trailing: 4))
                                     .onAppear { // 마지막 row일때 다음 항목을 로딩함
                                         if index == books.items.count - 1 {
                                             self.viewModel.loadNext()
                                         }
                                     }
-                                    .onTapGesture { // 탭할때 SafariView로 띄울 item
-                                        self.bookItem = book
-                                    }
-                                    .sheet(item: self.$bookItem, content: { book in
-                                        URL(string: book.volumeInfo.infoLink ?? "")
-                                            .map { SafariView(url: $0) }
-                                    }) // NavigationLink(Push)를 쓰면 NavigationBar가 중복으로 나와서 Present 방식으로 띄움
                             }
                             // Section 마지막에 LoadingRow를 붙여준다
                             if self.viewModel.shouldInfiniteScroll {
