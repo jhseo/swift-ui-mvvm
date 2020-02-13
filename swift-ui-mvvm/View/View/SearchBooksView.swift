@@ -19,33 +19,39 @@ struct SearchBooksView: View {
         NavigationView {
             VStack(spacing: 0) {
                 SearchBar(placeHolder: "Search books", searchText: self.$viewModel.searchText)
-                viewModel.books.map { books in
-                    List { // List에 Array를 넣는 방식이 보편적이나 마지막Row에 LoadingRow를 Insert하기 위해서는 ForEach를 사용해야 함
-                        Section(header: Text("Results (\(books.totalItems))")) {
-                            ForEach(Array(books.items.enumerated()), id: \.offset) { (index, book) in
-                                BookRow(book: book.volumeInfo)
-                                    .onAppear { // 마지막 row일때 다음 항목을 로딩함
-                                        if index == books.items.count - 1 {
-                                            self.viewModel.loadNext()
-                                        }
-                                    }
-                            }
-                            // Section 마지막에 LoadingRow를 붙여준다
-                            if self.viewModel.shouldInfiniteScroll {
-                                LoadingRow(isLoading: true)
-                            }
-                        }
-                    }
-                    .listStyle(GroupedListStyle())
-                }
-                Spacer()
+                bookListView
             }
             .background(Color(UIColor.systemGroupedBackground))
             .edgesIgnoringSafeArea(.bottom)
             .resignKeyboardOnDragGesture() // drag시 keyboard 감추도록 함
             .navigationBarTitle(Text("Search"))
         }
-        .navigationViewStyle(StackNavigationViewStyle()) // SplitView(DoubleComnNavigationViewStyle)을 사용하지 않음
+        .navigationViewStyle(StackNavigationViewStyle()) // Pad에서 SplitView(DoubleColumnNavigationViewStyle)을 사용하지 않음
+    }
+
+    var bookListView: some View {
+        Group {
+            viewModel.books.map { books in
+                List { // List에 Array를 넣는 방식이 보편적이나 마지막Row에 LoadingRow를 Insert하기 위해서는 ForEach를 사용해야 함
+                    Section(header: Text("Results (\(books.totalItems))")) {
+                        ForEach(Array(books.items.enumerated()), id: \.offset) { (index, book) in
+                            BookRow(book: book.volumeInfo)
+                                .onAppear { // 마지막 row일때 다음 항목을 로딩함
+                                    if index == books.items.count - 1 {
+                                        self.viewModel.loadNext()
+                                    }
+                                }
+                        }
+                        // Section 마지막에 LoadingRow를 붙여준다
+                        if self.viewModel.shouldInfiniteScroll {
+                            LoadingRow(isLoading: true)
+                        }
+                    }
+                }
+                .listStyle(GroupedListStyle())
+            }
+            Spacer()
+        }
     }
 }
 
