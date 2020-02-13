@@ -34,12 +34,11 @@ struct SearchBooksView: View {
             viewModel.books.map { books in
                 List { // List에 Array를 넣는 방식이 보편적이나 마지막Row에 LoadingRow를 Insert하기 위해서는 ForEach를 사용해야 함
                     Section(header: Text("Results (\(books.totalItems))")) {
-                        ForEach(Array(books.items.enumerated()), id: \.offset) { (index, book) in
+                        ForEach(books.items) { book in
                             BookRow(book: book.volumeInfo)
-                                .onAppear { // 마지막 row일때 다음 항목을 로딩함
-                                    if index == books.items.count - 1 {
-                                        self.viewModel.loadNext()
-                                    }
+                                // 마지막 row일때 다음 항목을 로딩함
+                                .loadNext(book, books.items) {
+                                    self.viewModel.loadNext()
                                 }
                         }
                         // Section 마지막에 LoadingRow를 붙여준다
