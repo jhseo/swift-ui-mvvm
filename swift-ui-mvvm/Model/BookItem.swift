@@ -16,3 +16,13 @@ struct BookItem: Codable, Identifiable {
         case volumeInfo = "volumeInfo"
     }
 }
+
+extension BookItem: Hashable {
+    static func == (lhs: BookItem, rhs: BookItem) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
