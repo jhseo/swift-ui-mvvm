@@ -17,5 +17,6 @@ struct LoadingRow : View {
             ActivityIndicatorView(isLoading: isLoading)
             Spacer()
         }
+        .listRowBackground(Color(UIColor.systemGroupedBackground))
     }
 }

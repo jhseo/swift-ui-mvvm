@@ -34,7 +34,6 @@ struct SearchBooksView: View {
                             // Section 마지막에 LoadingRow를 붙여준다
                             if self.viewModel.shouldInfiniteScroll {
                                 LoadingRow(isLoading: true)
-                                    .listRowBackground(Color(UIColor.systemGroupedBackground))
                             }
                         }
                     }
