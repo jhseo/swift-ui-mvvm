@@ -12,7 +12,7 @@ struct SearchBooksView: View {
     @ObservedObject var viewModel = SearchBooksViewModel()
 
     init() {
-        UITableView.appearance().separatorStyle = .none
+        UITableView.appearance().separatorStyle = .none // LoadingRow에도 Separator가 나오는데 부자연스럽기 때문에 BookRow에서 Divider를 추가하는 방식으로 Custom한다.
     }
 
     var body: some View {

@@ -19,7 +19,7 @@ struct ImageView: View {
     var body: some View {
         VStack {
             Image(uiImage: imageLoader.data.isEmpty ? image : UIImage(data: imageLoader.data)!)
-                .resizable()
+                .resizable() // 이미지의 크기를 조절하기 위해서 무조건 필요하다
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 50, height: 50)
         }

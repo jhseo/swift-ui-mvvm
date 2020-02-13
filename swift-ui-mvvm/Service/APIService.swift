@@ -28,6 +28,6 @@ final class APIService {
             .map { $0 }
             .replaceError(with: nil)
             .receive(on: RunLoop.main)
-            .eraseToAnyPublisher()
+            .eraseToAnyPublisher() // Publisher 타입을 AnyPublisher로 변경 (Cancellable을 사용하기 위함)
     }
 }

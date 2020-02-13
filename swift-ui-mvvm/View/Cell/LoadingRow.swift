@@ -17,6 +17,7 @@ struct LoadingRow : View {
             ActivityIndicatorView(isLoading: isLoading)
             Spacer()
         }
+        // 실제로는 List의 Row지만 systemGroupedBackground와 동일한 색상으로 보여줘야 자연스럽기 때문에 변경한다
         .listRowBackground(Color(UIColor.systemGroupedBackground))
     }
 }
