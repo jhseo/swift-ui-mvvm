@@ -31,6 +31,7 @@
 		4322CAE323EBBB8A00838A98 /* SearchBooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAE223EBBB8A00838A98 /* SearchBooksViewModel.swift */; };
 		4322CAE623EBBC0900838A98 /* SearchBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAE523EBBC0900838A98 /* SearchBooksView.swift */; };
 		4322CAE823EBBC5F00838A98 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322CAE723EBBC5F00838A98 /* UIApplication+Extension.swift */; };
+		43DCB2EE23F3F46E00F5BE18 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCB2ED23F3F46E00F5BE18 /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		4322CAE223EBBB8A00838A98 /* SearchBooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksViewModel.swift; sourceTree = "<group>"; };
 		4322CAE523EBBC0900838A98 /* SearchBooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksView.swift; sourceTree = "<group>"; };
 		4322CAE723EBBC5F00838A98 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		43DCB2ED23F3F46E00F5BE18 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 			children = (
 				4322CADB23EBB97600838A98 /* UIImage+Extension.swift */,
 				4322CAE723EBBC5F00838A98 /* UIApplication+Extension.swift */,
+				43DCB2ED23F3F46E00F5BE18 /* View+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				4322CA9923EBACA400838A98 /* SceneDelegate.swift in Sources */,
 				4322CADE23EBBA4600838A98 /* ActivityIndicatorView.swift in Sources */,
 				4322CACB23EBB07F00838A98 /* APIService.swift in Sources */,
+				43DCB2EE23F3F46E00F5BE18 /* View+Extension.swift in Sources */,
 				4322CADC23EBB97600838A98 /* UIImage+Extension.swift in Sources */,
 				4322CAC823EBAEF100838A98 /* ImageLinks.swift in Sources */,
 				4322CAD423EBB2AD00838A98 /* BookRow.swift in Sources */,
