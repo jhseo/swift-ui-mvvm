@@ -18,19 +18,6 @@ extension View {
     }
 }
 
-private struct HiddenModifier: ViewModifier {
-    private let isHidden: Bool
-    func body(content: Content) -> some View {
-        Group {
-            if isHidden {
-                content.hidden()
-            } else {
-                content
-            }
-        }
-    }
-}
-
 private struct ResignKeyboardOnDragGesture: ViewModifier {
     private var gesture = DragGesture().onChanged{ _ in
         UIApplication.shared.endEditing(true)
