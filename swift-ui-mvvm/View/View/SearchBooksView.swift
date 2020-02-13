@@ -10,7 +10,6 @@ import SwiftUI
 
 struct SearchBooksView: View {
     @ObservedObject var viewModel = SearchBooksViewModel()
-    @State var bookItem: BookItem? = nil // 탭할때 SafariView로 띄울 item
 
     init() {
         UITableView.appearance().separatorStyle = .none

@@ -23,6 +23,7 @@ struct ImageView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 50, height: 50)
         }
+        // 해당 publisher의 event가 방출되면 실행하는 closure
         .onReceive(imageLoader.didChange) { data in
             self.image = UIImage(data: data) ?? UIImage()
         }

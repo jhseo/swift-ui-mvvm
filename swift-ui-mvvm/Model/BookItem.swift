@@ -9,7 +9,7 @@
 import Foundation
 
 struct BookItem: Codable, Identifiable {
-    var id = UUID()
+    var id = UUID() // .sheet를 사용하기 위해서는 unique id가 필요하다.
     let volumeInfo: VolumeInfo
 
     enum CodingKeys: String, CodingKey {
